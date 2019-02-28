@@ -1,24 +1,24 @@
 fullstack-nanodegree-vm
 =============
 
-#Item Catalog Web App
+# Item Catalog Web App
 
 This is an Udacity nanodegree full stack web development project and it provides a list of items within a variety of categories as well as provide a user authentication system.
 Users will have the ability to post, edit and delete their own items. This project is a RESTful web application utilizing the Flask framework which accesses a SQL database that populates categories and their items. OAuth2 provides authentication for further CRUD functionality on the application. Currently OAuth2 is implemented for Google Accounts.
 
-#Getting started
+# Getting started
 
 You can clone or download this project from: https://github.com/cmartinezBoada/Build-an-item-catalog-application.git
 
-#Prerequisites
+# Prerequisites
 
 You will need to install these following application in order to make this code work.
 
-#VirtualBox
+# VirtualBox
 Vagrant
 You will also need to download these following files to make it work.
 
-#VM configuration
+# VM configuration
 Installing
 
 Unzip the VM configuration and you will find a vagrant folder
