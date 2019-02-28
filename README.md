@@ -10,13 +10,15 @@ You can clone or download this project from: https://github.com/cmartinezBoada/B
 # Prerequisites
 
 You will need to install these following application in order to make this code work.
+* [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+* [Vagrant](https://www.vagrantup.com/downloads.html)
 
-# VirtualBox
-Vagrant
-You will also need to download these following files to make it work.
+
+* [VM configuration](https://d17h27t6h515a5.cloudfront.net/topher/2017/August/59822701_fsnd-virtual-machine/fsnd-virtual-machine.zip)
 
 # VM configuration
-Installing
+
+### Installing
 
 * Unzip the VM configuration and you will find a vagrant folder
 * Use the Terminal to get into the vagrant folder from VM configuration
@@ -37,11 +39,12 @@ Then you can run this command
 After it added items succesfully, you can run the following command
 * $ python app.py
 After finish running project.py you can use your favorite browser to visit this link
-How to use
 
-You can browse through the website to find out the different categories of sports.
-You can also create you own items after you login.
-Only the users who created the item have the ability to post, edit, and delete it.
-You can edit or delete an item that you have created.
-You can also log out and you will lost your right to change this item.
+# How to use
+
+* You can browse through the website to find out the different categories of sports.
+* You can also create you own items after you login.
+* Only the users who created the item have the ability to post, edit, and delete it.
+* You can edit or delete an item that you have created.
+* You can also log out and you will lost your right to change this item.
 
