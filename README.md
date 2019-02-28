@@ -1,7 +1,4 @@
-Catalog APP
-=============
-
-# Item Catalog Web App
+# Catalog Web App
 
 This is an Udacity nanodegree full stack web development project and it provides a list of items within a variety of categories as well as provide a user authentication system.
 Users will have the ability to post, edit and delete their own items. This project is a RESTful web application utilizing the Flask framework which accesses a SQL database that populates categories and their items. OAuth2 provides authentication for further CRUD functionality on the application. Currently OAuth2 is implemented for Google Accounts.
@@ -33,12 +30,12 @@ Setting up the enviroment
 
 * Move the folder you downloaded from GitHub and put it into the vagrant folder
 use the following line to get into the vagrant VM folder
-$ cd /vagrant
+* $ cd /vagrant
 Use the command line to get in to the folder you just downloaded
 Then you can run this command
-$ python lotsofitems.py
+* $ python lotsofitems.py
 After it added items succesfully, you can run the following command
-$ python app.py
+* $ python app.py
 After finish running project.py you can use your favorite browser to visit this link
 How to use
 
