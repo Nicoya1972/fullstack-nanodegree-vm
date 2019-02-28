@@ -5,7 +5,7 @@ Users will have the ability to post, edit and delete their own items. This proje
 
 # Getting started
 
-You can clone or download this project from: https://github.com/cmartinezBoada/Build-an-item-catalog-application.git
+You can clone or download this project from: https://github.com/Nicoya1972/fullstack-nanodegree-vm
 
 # Prerequisites
 
