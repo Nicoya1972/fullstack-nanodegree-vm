@@ -1,4 +1,4 @@
-fullstack-nanodegree-vm
+Catalog APP
 =============
 
 # Item Catalog Web App
@@ -21,17 +21,17 @@ You will also need to download these following files to make it work.
 # VM configuration
 Installing
 
-Unzip the VM configuration and you will find a vagrant folder
-Use the Terminal to get into the vagrant folder from VM configuration
+* Unzip the VM configuration and you will find a vagrant folder
+* Use the Terminal to get into the vagrant folder from VM configuration
 run the following command
-$ vagrant up
-This will cause Vagrant to download the Linux operating system and install it.
+* $ vagrant up
+* This will cause Vagrant to download the Linux operating system and install it.
 After it finished and after the shell prompt comes back, you can run this command
-$ vagrant ssh
+* $ vagrant ssh
 And this will let you login to the Linux VM.
 Setting up the enviroment
 
-Move the folder you downloaded from GitHub and put it into the vagrant folder
+* Move the folder you downloaded from GitHub and put it into the vagrant folder
 use the following line to get into the vagrant VM folder
 $ cd /vagrant
 Use the command line to get in to the folder you just downloaded
