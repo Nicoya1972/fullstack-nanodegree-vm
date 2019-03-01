@@ -189,7 +189,7 @@ def showCatalogCategoryItemInfoJSON(category_name, item_name):
 @app.route("/login")
 def showLogin():
     '''
-    Create anti-forgery state token
+    
     '''
     # create an random state string
     state = "".join(random.choice(
@@ -428,9 +428,7 @@ def showCatalogCategoryItemInfo(category_name, item_name):
 def newCatalogCategoryItem():
     '''
     Create an item within the catalog.
-    The method GET will open the 'newCategoryItem.html' page.
-    The method POST will capture the input in the DB and redirect the user to
-    the 'showCatalogCategoryItem.html' page
+    
     '''
     # check if user has been logged in, otherwise re-route to login page
     if "username" not in login_session:

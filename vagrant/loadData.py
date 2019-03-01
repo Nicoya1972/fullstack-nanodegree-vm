@@ -9,18 +9,13 @@ engine = create_engine('sqlite:///catalogCategoryItems.db')
 Base.metadata.bind = engine
 
 DBSession = sessionmaker(bind=engine)
-# A DBSession() instance establishes all conversations with the database
-# and represents a "staging zone" for all the objects loaded into the
-# database session object. Any change made against the objects in the
-# session won't be persisted into the database until you call
-# session.commit(). If you're not happy about the changes, you can
-# revert all of them back to the last commit by calling
-# session.rollback()
+# A DBSession() instance establishes all conversations with the database.
+
 session = DBSession()
 
 
-# Dummy User
-user = User(name="Dummy", email="dummy.user@udacity.com")
+# ghost User
+user = User(name="ghost", email="ghost.user@udacity.com")
 session.add(user)
 session.commit()
 
@@ -97,25 +92,25 @@ session.commit()
 
 # Item #3
 item3 = CatalogCategoryItem(
-    name="Jersey", description="Jersey", category_id=1, user_id=1)
+    name="Jersey", description="Jersey Shore", category_id=1, user_id=1)
 session.add(item3)
 session.commit()
 
 # Item #4
 item4 = CatalogCategoryItem(
-    name="Bat", description="Bat", category_id=3, user_id=1)
+    name="Bat", description="Aluminum Master Batman", category_id=3, user_id=1)
 session.add(item4)
 session.commit()
 
 # Item #5
 item5 = CatalogCategoryItem(
-    name="Frisbee", description="Frisbee", category_id=4, user_id=1)
+    name="Frisbee", description="Frisbee Zone Flyer", category_id=4, user_id=1)
 session.add(item5)
 session.commit()
 
 # Item #6
 item6 = CatalogCategoryItem(
-    name="Shinguards", description="Shinguards", category_id=1, user_id=1)
+    name="Shinguards", description="Shinguards to protect your shins", category_id=1, user_id=1)
 session.add(item6)
 session.commit()
 
@@ -128,19 +123,19 @@ session.commit()
 
 # Item #8
 item8 = CatalogCategoryItem(
-    name="Snowboard", description="Snowboard", category_id=5, user_id=1)
+    name="Snowboard", description="Snowboard thru the Mountains", category_id=5, user_id=1)
 session.add(item8)
 session.commit()
 
 # Item #9
 item9 = CatalogCategoryItem(
-    name="Goggles", description="Goggles", category_id=5, user_id=1)
+    name="Goggles", description="Goggles to better see", category_id=5, user_id=1)
 session.add(item9)
 session.commit()
 
 # Item #10
 item10 = CatalogCategoryItem(
-    name="Stick", description="Stick", category_id=9, user_id=1)
+    name="Stick", description="Stick to mix it up with", category_id=9, user_id=1)
 session.add(item10)
 session.commit()
 
