@@ -35,10 +35,12 @@ use the following line to get into the vagrant VM folder
 * $ cd /vagrant
 Use the command line to get in to the folder you just downloaded
 Then you can run this command
-* $ python lotsofitems.py
+* $ pyhton database_setup.py
+* $ python loadData.py
 After it added items succesfully, you can run the following command
-* $ python app.py
+* $ python project.py
 After finish running project.py you can use your favorite browser to visit this link
+* http://localhost:8000/catalog/
 
 # How to use
 
