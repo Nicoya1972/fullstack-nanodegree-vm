@@ -110,7 +110,8 @@ session.commit()
 
 # Item #6
 item6 = CatalogCategoryItem(
-    name="Shinguards", description="Shinguards to protect your shins", category_id=1, user_id=1)
+    name="Shinguards",
+    description="Shinguards to protect your shins", category_id=1, user_id=1)
 session.add(item6)
 session.commit()
 
@@ -123,19 +124,22 @@ session.commit()
 
 # Item #8
 item8 = CatalogCategoryItem(
-    name="Snowboard", description="Snowboard thru the Mountains", category_id=5, user_id=1)
+    name="Snowboard",
+    description="Snowboard thru the Mountains", category_id=5, user_id=1)
 session.add(item8)
 session.commit()
 
 # Item #9
 item9 = CatalogCategoryItem(
-    name="Goggles", description="Goggles to better see", category_id=5, user_id=1)
+    name="Goggles",
+    description="Goggles to better see", category_id=5, user_id=1)
 session.add(item9)
 session.commit()
 
 # Item #10
 item10 = CatalogCategoryItem(
-    name="Stick", description="Stick to mix it up with", category_id=9, user_id=1)
+    name="Stick",
+    description="Stick to mix it up with", category_id=9, user_id=1)
 session.add(item10)
 session.commit()
 

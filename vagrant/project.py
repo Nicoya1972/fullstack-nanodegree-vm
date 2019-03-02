@@ -1,3 +1,4 @@
+#! /usr/bin/env python3
 # Imports
 import random
 import string
@@ -19,9 +20,9 @@ from flask import (Flask,
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from database_setup import (Base,
-                           User,
-                           CatalogCategory,
-                           CatalogCategoryItem)
+                            User,
+                            CatalogCategory,
+                            CatalogCategoryItem)
 
 from oauth2client.client import (flow_from_clientsecrets,
                                  FlowExchangeError)
@@ -182,15 +183,13 @@ def showCatalogCategoryItemInfoJSON(category_name, item_name):
     json_item = item(item_name, category_name)
     return jsonify(CategoryItem=json_item.serialize)
 
-
 # ---------------
 # SECURITY ROUTES
 # ---------------
+
+
 @app.route("/login")
 def showLogin():
-    '''
-    
-    '''
     # create an random state string
     state = "".join(random.choice(
         string.ascii_uppercase + string.digits) for x in range(32))
@@ -428,7 +427,6 @@ def showCatalogCategoryItemInfo(category_name, item_name):
 def newCatalogCategoryItem():
     '''
     Create an item within the catalog.
-    
     '''
     # check if user has been logged in, otherwise re-route to login page
     if "username" not in login_session:
@@ -491,7 +489,7 @@ def editCatalogCategoryItem(item_name):
             # call helper method categories
             current_categories = categories()
             return render_template(
-                'editCatelogItem.html',
+                'editCatalogItem.html',
                 categories=current_categories, item=item)
 
 
@@ -519,10 +517,10 @@ def deleteCatalogCategoryItem(item_name):
             flash("Please add your own item first.")
             return redirect(url_for("showCatalog"))
         else:
-            return render_template("<deleteCatelog></deleteCatelog>Item.html", item=item)
-
+            return render_template("deleteCatelogItem.html", item=item)
 
 if __name__ == "__main__":
     app.secret_key = "super_secret_key"
     app.debug = True
     app.run(host='0.0.0.0', port=8000)
+
